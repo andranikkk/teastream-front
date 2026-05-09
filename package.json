@@ -4,19 +4,31 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "server": "cd ../teastream-back && npm run start:dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "codegen": "graphql-codegen --config graphql.config.ts"
   },
   "dependencies": {
+    "@apollo/client": "3.11.10",
+    "@graphql-codegen/cli": "^7.0.0",
+    "@graphql-codegen/typescript": "^6.0.1",
+    "@graphql-codegen/typescript-operations": "^6.0.2",
+    "@graphql-codegen/typescript-react-apollo": "^4.4.2",
+    "graphql": "16",
     "next": "16.2.6",
     "react": "19.2.4",
     "react-dom": "19.2.4"
   },
   "devDependencies": {
+    "@parcel/watcher": "^2.5.6",
     "@tailwindcss/postcss": "^4",
+    "@trivago/prettier-plugin-sort-imports": "^6.0.2",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "dotenv": "^17.4.2",
+    "prettier-plugin-tailwindcss": "^0.8.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   },
