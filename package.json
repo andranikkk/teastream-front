@@ -3,11 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "graphql-codegen --config graphql.config.ts && next dev",
     "server": "cd ../teastream-back && npm run start:dev",
-    "build": "next build",
-    "start": "next start",
-    "codegen": "graphql-codegen --config graphql.config.ts"
+    "build": "graphql-codegen --config graphql.config.ts && next build",
+    "start": "next start"
   },
   "dependencies": {
     "@apollo/client": "3.11.10",
@@ -17,6 +16,7 @@
     "@graphql-codegen/typescript-react-apollo": "^4.4.2",
     "graphql": "16",
     "next": "16.2.6",
+    "next-intl": "^4.11.1",
     "react": "19.2.4",
     "react-dom": "19.2.4"
   },
