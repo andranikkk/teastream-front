@@ -1,4 +1,6 @@
 {
+  "singleQuote": true,
+  "trailingComma": "none",
   "importOrder": [
     "<THIRD_PARTY_MODULES>",
     "@/app/(.*)$",
