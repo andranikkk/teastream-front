@@ -1,5 +1,26 @@
 {
-  "home": {
-    "title": "Home Page"
+  "auth": {
+    "register": {
+      "heading": "Register",
+      "backButtonLabel": "Already have an account? Log in",
+      "usernameLabel": "Username",
+      "usernameDescription": "Username must be unique and between 3 and 20 characters",
+      "emailLabel": "Email",
+      "emailDescription": "We'll use this email to contact you",
+      "passwordLabel": "Password",
+      "passwordDescription": "Password must be at least 8 characters long",
+      "submitButton": "Register",
+      "successAlertTitle": "Enter the token in the input field",
+      "successAlertDescription": "Get the token from the database, from the Token entity under the VERIFY_EMAIL type. Or copy it from the server console if it's running in development mode.",
+      "errorMessage": "An error occurred during registration."
+    },
+    "verify": {
+      "heading": "Verify Account",
+      "tokenLabel": "Token",
+      "tokenDescription": "Enter the token from the DB (or from the server console)",
+      "successMessage": "Your account has been successfully verified.",
+      "errorMessage": "An error occurred during account verification.",
+      "submitButton": "Verify"
+    }
   }
 }
