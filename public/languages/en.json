@@ -21,6 +21,20 @@
       "successMessage": "Your account has been successfully verified.",
       "errorMessage": "An error occurred during account verification.",
       "submitButton": "Verify"
+    },
+    "login": {
+      "heading": "Log in to your account",
+      "backButtonLabel": "Don't have an account? Register",
+      "loginLabel": "Login",
+      "loginDescription": "Enter your username or email",
+      "passwordLabel": "Password",
+      "passwordDescription": "Enter your password",
+      "pinLabel": "PIN",
+      "pinDescription": "Enter 2FA PIN",
+      "forgotPassword": "Forgot your password?",
+      "submitButton": "Log In",
+      "successMessage": "You have successfully logged in.",
+      "errorMessage": "Invalid login credentials. Please try again."
     }
   }
 }

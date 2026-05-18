@@ -21,6 +21,20 @@
       "successMessage": "Ваш аккаунт успешно подтвержден.",
       "errorMessage": "Произошла ошибка при подтверждении аккаунта.",
       "submitButton": "Подтвердить"
+    },
+    "login": {
+      "heading": "Войдите в свой аккаунт",
+      "backButtonLabel": "Нет аккаунта? Зарегистрироваться",
+      "loginLabel": "Логин",
+      "loginDescription": "Введите свой логин или электронную почту",
+      "passwordLabel": "Пароль",
+      "passwordDescription": "Введите свой пароль",
+      "pinLabel": "ПИН",
+      "pinDescription": "Введите 2ФА ПИН",
+      "forgotPassword": "Забыли пароль?",
+      "submitButton": "Войти",
+      "successMessage": "Вы успешно вошли в систему.",
+      "errorMessage": "Неверные учетные данные. Пожалуйста, попробуйте снова."
     }
   }
 }
