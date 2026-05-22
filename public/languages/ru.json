@@ -29,12 +29,22 @@
       "loginDescription": "Введите свой логин или электронную почту",
       "passwordLabel": "Пароль",
       "passwordDescription": "Введите свой пароль",
-      "pinLabel": "ПИН",
-      "pinDescription": "Введите 2ФА ПИН",
+      "pinLabel": "6-значный код",
+      "pinDescription": "Введите 6-значный код из вашего приложения для аутентификации",
       "forgotPassword": "Забыли пароль?",
       "submitButton": "Войти",
       "successMessage": "Вы успешно вошли в систему.",
       "errorMessage": "Неверные учетные данные. Пожалуйста, попробуйте снова."
+    },
+    "resetPassword": {
+      "heading": "Сброс пароля",
+      "backButtonLabel": "Есть учетная запись? Войти",
+      "emailLabel": "Электронная почта",
+      "emailDescription": "Ваша почта, которую вы использовали при регистрации",
+      "submitButton": "Сбросить пароль",
+      "successAlertTitle": "Ссылка отправлена",
+      "successAlertDescription": "Проверьте свою электронную почту для получения инструкции по сбросу пароля.",
+      "errorMessage": "Произошла ошибка при сбросе пароля."
     }
   }
 }

@@ -54,13 +54,6 @@ export function CreateAccountForm() {
       backButtonLabel={t('backButtonLabel')}
       backButtonHref="/account/login"
     >
-      {/* {isSuccess ? (
-        <Alert>
-          <CircleCheck className="size-4" />
-          <AlertTitle>{t('successAlertTitle')}</AlertTitle>
-          <AlertDescription>{t('successAlertDescription')}</AlertDescription>
-        </Alert>
-      ) : ( */}
       <form onSubmit={form.handleSubmit(onSubmit)} className="grid gap-y-3">
         <Controller
           control={form.control}
@@ -113,7 +106,6 @@ export function CreateAccountForm() {
           {t('submitButton')}
         </Button>
       </form>
-      {/* )} */}
     </AuthWrapper>
   );
 }

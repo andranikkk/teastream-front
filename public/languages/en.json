@@ -29,12 +29,22 @@
       "loginDescription": "Enter your username or email",
       "passwordLabel": "Password",
       "passwordDescription": "Enter your password",
-      "pinLabel": "PIN",
-      "pinDescription": "Enter 2FA PIN",
+      "pinLabel": "6-digit code",
+      "pinDescription": "Enter the 6-digit code from your authentication app",
       "forgotPassword": "Forgot your password?",
       "submitButton": "Log In",
       "successMessage": "You have successfully logged in.",
       "errorMessage": "Invalid login credentials. Please try again."
+    },
+    "resetPassword": {
+      "heading": "Reset Password",
+      "backButtonLabel": "Have an account? Log in",
+      "emailLabel": "Email",
+      "emailDescription": "Your email that you used during registration",
+      "submitButton": "Reset Password",
+      "successAlertTitle": "Link Sent",
+      "successAlertDescription": "Check your email for instructions on how to reset your password.",
+      "errorMessage": "An error occurred while resetting the password."
     }
   }
 }
