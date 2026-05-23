@@ -16,14 +16,15 @@ import {
   FieldDescription,
   FieldLabel
 } from '@/components/ui/common/Field';
-import Link from 'next/link';
 import { Input } from '@/components/ui/common/Input';
 import { Button } from '@/components/ui/common/Button';
 
 export function NewPasswordForm() {
-  const t = useTranslations('auth.newPassword');
   const router = useRouter();
   const params = useParams<{ token: string }>();
+
+  const t = useTranslations('auth.newPassword');
+
   const form = useForm<TypeNewPasswordSchema>({
     resolver: zodResolver(newPasswordSchema),
     defaultValues: {

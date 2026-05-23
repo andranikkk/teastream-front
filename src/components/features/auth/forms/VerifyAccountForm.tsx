@@ -19,11 +19,14 @@ import {
 } from '@/components/ui/common/Field';
 import { Input } from '@/components/ui/common/Input';
 import { Button } from '@/components/ui/common/Button';
+import { useAuth } from '@/hooks/useAuth';
 
 export function VerifyAccountForm() {
+  const t = useTranslations('auth.verify');
+
   const router = useRouter();
 
-  const t = useTranslations('auth.verify');
+  const { auth } = useAuth();
 
   const form = useForm<TypeVerifyAccountSchema>({
     resolver: zodResolver(verifyAccountSchema),
@@ -34,6 +37,7 @@ export function VerifyAccountForm() {
 
   const [verify, { loading }] = useVerifyAccountMutation({
     onCompleted() {
+      auth();
       toast.success(t('successMessage'));
       router.push('/dashboard/settings');
     },

@@ -22,11 +22,15 @@ import {
   InputOTPSlot
 } from '@/components/ui/common/Input-OTP';
 import Link from 'next/link';
+import { useAuth } from '@/hooks/useAuth';
 
 export function LoginForm() {
-  const t = useTranslations('auth.login');
   const [isShowTwoFactor, setIsShowTwoFactor] = useState(false);
   const router = useRouter();
+
+  const t = useTranslations('auth.login');
+
+  const { auth } = useAuth();
 
   const form = useForm<TypeLoginSchema>({
     resolver: zodResolver(loginSchema),
@@ -41,6 +45,7 @@ export function LoginForm() {
       if (data.loginUser.message) {
         setIsShowTwoFactor(true);
       } else {
+        auth();
         toast.success(t('successMessage'));
         router.push('/dashboard/settings');
       }

@@ -20,8 +20,9 @@ import { useTranslations } from 'next-intl';
 import { useRouter } from 'next/navigation';
 
 export function CreateAccountForm() {
-  const t = useTranslations('auth.register');
   const router = useRouter();
+
+  const t = useTranslations('auth.register');
 
   const form = useForm<TypeCreateAccountSchema>({
     resolver: zodResolver(createAccountSchema),

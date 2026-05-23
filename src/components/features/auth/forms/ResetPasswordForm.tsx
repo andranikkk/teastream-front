@@ -24,12 +24,11 @@ import {
   AlertTitle
 } from '@/components/ui/common/Alert';
 import { CircleCheck } from 'lucide-react';
-import { useRouter } from 'next/navigation';
 
 export function ResetPasswordForm() {
-  const t = useTranslations('auth.resetPassword');
   const [isSuccess, setIsSuccess] = useState(false);
-  const router = useRouter();
+
+  const t = useTranslations('auth.resetPassword');
 
   const form = useForm<TypeResetPasswordSchema>({
     resolver: zodResolver(resetPasswordSchema),
