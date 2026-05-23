@@ -1,7 +1,7 @@
 'use client';
 
 import { useLoginUserMutation } from '@/graphql/generated/output';
-import { loginSchema, TypeLoginSchema } from '@/schemas/auth/login.schema';
+import { loginSchema, type TypeLoginSchema } from '@/schemas/auth/login.schema';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useTranslations } from 'next-intl';
 import { Controller, useForm } from 'react-hook-form';
@@ -39,11 +39,8 @@ export function LoginForm() {
   const [login, { loading: isLoadingLogin }] = useLoginUserMutation({
     onCompleted(data) {
       if (data.loginUser.message) {
-        console.log(isShowTwoFactor, 'isShowTwoFactor');
-
         setIsShowTwoFactor(true);
       } else {
-        console.log(isShowTwoFactor, 'isShowTwoFactor else');
         toast.success(t('successMessage'));
         router.push('/dashboard/settings');
       }

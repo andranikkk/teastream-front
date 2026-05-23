@@ -8,7 +8,7 @@ import {
 import { AuthWrapper } from '../AuthWrapper';
 import {
   createAccountSchema,
-  TypeCreateAccountSchema
+  type TypeCreateAccountSchema
 } from '@/schemas/auth/create-account.schema';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Controller, useForm } from 'react-hook-form';

@@ -44,7 +44,19 @@
       "submitButton": "Reset Password",
       "successAlertTitle": "Link Sent",
       "successAlertDescription": "Check your email for instructions on how to reset your password.",
+      "successMessage": "Request successfully sent.",
       "errorMessage": "An error occurred while resetting the password."
+    },
+    "newPassword": {
+      "heading": "New Password",
+      "backButtonLabel": "Have an account? Log in",
+      "passwordLabel": "New Password",
+      "passwordDescription": "Enter a new password (at least 8 characters)",
+      "passwordRepeatLabel": "Repeat New Password",
+      "passwordRepeatDescription": "Repeat the new password to confirm",
+      "submitButton": "Set New Password",
+      "successMessage": "Your password has been successfully updated. You can now log in with your new password.",
+      "errorMessage": "An error occurred while setting the new password."
     }
   }
 }

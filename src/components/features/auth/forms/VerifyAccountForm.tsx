@@ -3,13 +3,12 @@
 import { useVerifyAccountMutation } from '@/graphql/generated/output';
 import { useTranslations } from 'next-intl';
 import { useRouter } from 'next/navigation';
-import { useState } from 'react';
 import { toast } from 'sonner';
 import { AuthWrapper } from '../AuthWrapper';
 import { Loader } from 'lucide-react';
 import { Controller, useForm } from 'react-hook-form';
 import {
-  TypeVerifyAccountSchema,
+  type TypeVerifyAccountSchema,
   verifyAccountSchema
 } from '@/schemas/auth/create-account.schema';
 import { zodResolver } from '@hookform/resolvers/zod';
