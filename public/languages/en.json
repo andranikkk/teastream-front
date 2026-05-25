@@ -1,4 +1,53 @@
 {
+  "layout": {
+    "logo": {
+      "platform": "Streaming Platform"
+    },
+    "headingMenu": {
+      "login": "Log In",
+      "register": "Register",
+      "profileMenu": {
+        "notifications": {
+          "heading": "Notifications",
+          "loading": "Loading",
+          "empty": "No notifications yet"
+        },
+        "logoutSuccess": "You have successfully logged out.",
+        "logoutError": "An error occurred while logging out.",
+        "channel": "My Channel",
+        "dashboard": "Dashboard",
+        "logout": "Log Out"
+      }
+    },
+    "search": {
+      "placeholder": "Search..."
+    },
+    "dashboardNav": {
+      "settings": "Settings",
+      "streamSettings": "Stream Settings",
+      "keys": "Stream Keys",
+      "chatSettings": "Chat Settings",
+      "followers": "Followers",
+      "sponsors": "Sponsors",
+      "premiums": "Premiums",
+      "transactions": "Transactions"
+    },
+    "sidebarHeader": {
+      "expand": "Expand",
+      "collapse": "Collapse",
+      "navigation": "Navigation",
+      "forYou": "For You"
+    },
+    "userNav": {
+      "home": "Home",
+      "categories": "Categories",
+      "streams": "Streams",
+      "recommended": "Recommended"
+    },
+    "recommended": {
+      "heading": "Recommended Channels"
+    }
+  },
   "auth": {
     "register": {
       "heading": "Register",

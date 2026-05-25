@@ -1,4 +1,53 @@
 {
+  "layout": {
+    "logo": {
+      "platform": "Платформа для стримов"
+    },
+    "headerMenu": {
+      "login": "Войти",
+      "register": "Регистрация",
+      "profileMenu": {
+        "notifications": {
+          "heading": "Уведомления",
+          "loading": "Загрузка...",
+          "empty": "Пока нет уведомлений"
+        },
+        "logoutSuccess": "Вы успешно вышли из системы.",
+        "logoutError": "Произошла ошибка при выходе из системы.",
+        "channel": "Мой канал",
+        "dashboard": "Панель управления",
+        "logout": "Выйти"
+      }
+    },
+    "search": {
+      "placeholder": "Поиск..."
+    },
+    "dashboardNav": {
+      "settings": "Настройки",
+      "streamSettings": "Настройки стрима",
+      "keys": "Ключи для стрима",
+      "chatSettings": "Настройки чата",
+      "followers": "Подписчики",
+      "sponsors": "Спонсоры",
+      "premiums": "Премиум",
+      "transactions": "Транзакции"
+    },
+    "sidebarHeader": {
+      "expand": "Развернуть",
+      "collapse": "Свернуть",
+      "navigation": "Навигация",
+      "forYou": "Для вас"
+    },
+    "userNav": {
+      "home": "Главная",
+      "categories": "Категории",
+      "streams": "Трансляции",
+      "recommended": "Рекомендуемые"
+    },
+    "recommended": {
+      "heading": "Рекомендуемые каналы"
+    }
+  },
   "auth": {
     "register": {
       "heading": "Регистрация",

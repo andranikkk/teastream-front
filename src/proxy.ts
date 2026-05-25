@@ -1,6 +1,6 @@
 import { type NextRequest, NextResponse } from 'next/server';
 
-export default function middleware(request: NextRequest) {
+export default function proxy(request: NextRequest) {
   const session = request.cookies.get('session')?.value;
 
   const isAuthPage = request.url.includes('/account');
