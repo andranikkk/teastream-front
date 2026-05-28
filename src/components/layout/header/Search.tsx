@@ -11,7 +11,7 @@ export function Search() {
   const [searchTerm, setSearchTerm] = useState('');
   const router = useRouter();
 
-  const t = useTranslations('layout.search');
+  const t = useTranslations('layout.header.search');
 
   const onSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
