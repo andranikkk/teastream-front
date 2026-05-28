@@ -127,7 +127,7 @@
     /* height: 100vh; */
   }
   html {
-    @apply scroll-smooth font-mono;
+    @apply /* scroll-smooth */ font-mono;
   }
 }
 
