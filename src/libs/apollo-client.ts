@@ -4,7 +4,7 @@ import { ApolloClient } from '@apollo/client';
 import { SERVER_URL } from './constants/url.constants';
 
 const httpLink = createHttpLink({
-  uri: SERVER_URL,
+  uri: `${SERVER_URL}/graphql`,
   credentials: 'include'
 });
 

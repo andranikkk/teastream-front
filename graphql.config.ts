@@ -2,18 +2,18 @@ import "dotenv/config";
 import { CodegenConfig } from "@graphql-codegen/cli";
 
 const config: CodegenConfig = {
-  schema: process.env.NEXT_PUBLIC_SERVER_URL,
-  documents: ["./src/graphql/**/*.graphql"],
+  schema: `${process.env.NEXT_PUBLIC_SERVER_URL}/graphql`,
+  documents: ['./src/graphql/**/*.graphql'],
   generates: {
-    "./src/graphql/generated/output.ts": {
+    './src/graphql/generated/output.ts': {
       plugins: [
-        "typescript",
-        "typescript-operations",
-        "typescript-react-apollo",
-      ],
-    },
+        'typescript',
+        'typescript-operations',
+        'typescript-react-apollo'
+      ]
+    }
   },
-  ignoreNoDocuments: true,
+  ignoreNoDocuments: true
 };
 
 export default config;
