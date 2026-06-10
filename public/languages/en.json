@@ -111,6 +111,29 @@
       "errorMessage": "An error occurred while setting the new password."
     }
   },
+  "dashboard": {
+    "settings": {
+      "header": {
+        "heading": "Settings",
+        "description": "Manage your settings and preferences",
+        "profile": "Profile",
+        "account": "Account",
+        "appearance": "Appearance",
+        "notifications": "Notifications",
+        "sessions": "Sessions"
+      },
+      "changeAvatar": {
+        "heading": "Change Avatar",
+        "label": "Avatar",
+        "description": "Upload a new avatar for your profile",
+        "clickToUpload": "Choose File",
+        "changeImage": "Choose Another Avatar",
+        "submitButton": "Save Changes",
+        "successMessage": "Your avatar has been successfully updated.",
+        "errorMessage": "An error occurred while updating the avatar."
+      }
+    }
+  },
   "components": {
     "streamBadge": {
       "text": "Live"

@@ -17,6 +17,7 @@ import Link from 'next/link';
 import { useLogoutUserMutation } from '@/graphql/generated/output';
 import { toast } from 'sonner';
 import { Notifications } from './notifications/Notifications';
+import { Hint } from '@/components/ui/elements/Hint';
 
 export function ProfileMenu() {
   const t = useTranslations('layout.header.headerMenu.profileMenu');
@@ -43,9 +44,11 @@ export function ProfileMenu() {
     <>
       <Notifications />
       <DropdownMenu>
-        <DropdownMenuTrigger>
-          <ChannelAvatar channel={user} />
-        </DropdownMenuTrigger>
+        <Hint label={user.displayName} side="bottom">
+          <DropdownMenuTrigger>
+            <ChannelAvatar channel={user} />
+          </DropdownMenuTrigger>
+        </Hint>
         <DropdownMenuContent align="end" className="w-[230px]">
           <div className="flex items-center gap-x-3 p-2">
             <ChannelAvatar channel={user} />

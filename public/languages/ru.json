@@ -111,6 +111,29 @@
       "errorMessage": "Произошла ошибка при установке нового пароля."
     }
   },
+  "dashboard": {
+    "settings": {
+      "header": {
+        "heading": "Настройки",
+        "description": "Управляйте своими настройками и предпочтениями",
+        "profile": "Профиль",
+        "account": "Аккаунт",
+        "appearance": "Внешний вид",
+        "notifications": "Уведомления",
+        "sessions": "Сессии"
+      },
+      "changeAvatar": {
+        "heading": "Сменить аватар",
+        "label": "Аватар",
+        "description": "Загрузите новый аватар для своего профиля",
+        "clickToUpload": "Выбрать файл",
+        "changeImage": "Выбрать другой аватар",
+        "submitButton": "Сохранить изменения",
+        "successMessage": "Ваш аватар успешно обновлен.",
+        "errorMessage": "Произошла ошибка при обновлении аватара."
+      }
+    }
+  },
   "components": {
     "streamBadge": {
       "text": "В эфире"
