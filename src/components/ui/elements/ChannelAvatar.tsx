@@ -23,7 +23,6 @@ interface ChannelAvatarProps extends VariantProps<typeof avatarSizes> {
 }
 
 export function ChannelAvatar({ channel, size, isLive }: ChannelAvatarProps) {
-
   return (
     <div className="relative">
       <Avatar
